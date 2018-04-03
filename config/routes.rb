@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  root 'static_pages#home'
+
   resources :image_conmments
   resources :images
-  get 'static_pages/home'
 
   devise_for :users
   resources :books
